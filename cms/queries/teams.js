@@ -126,6 +126,7 @@ const getTeamsData = async () => {
     fragment memberDetails on Member {
       image
       title
+      year  
       position
       linkedin {
         ... on _ExternalLink {

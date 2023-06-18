@@ -8,7 +8,7 @@ import {
 import FadeInUp from '../FadeInUp';
 
   const CreditsContent = (props) =>{
-  const {name, image, position, linkedIn, instagram, github, twitter, behance,ec} = props;
+  const {name, image, position, linkedIn, instagram, github, twitter, behance,ec,year} = props;
   var avtrSize="xl";
   if(ec==="true")
   {
@@ -40,6 +40,14 @@ import FadeInUp from '../FadeInUp';
         textAlign="center"
       >
         {position}
+      </Text>
+      <Text
+        fontSize="md"
+        color="#8a9494"
+        fontWeight="medium"
+        textAlign="center"
+      >
+        {year}
       </Text>
       <HStack
         width="100%"

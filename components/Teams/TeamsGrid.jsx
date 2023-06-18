@@ -22,6 +22,7 @@ const TeamsGrid = ({ members, ec }) => (
         twitter={member.twitter}
         behance={member.behance}
         ec={ec}
+        year={member.year}
       />
     ))}
   </SimpleGrid>
