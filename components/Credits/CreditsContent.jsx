@@ -41,14 +41,6 @@ import FadeInUp from '../FadeInUp';
       >
         {position}
       </Text>
-      <Text
-        fontSize="md"
-        color="#8a9494"
-        fontWeight="medium"
-        textAlign="center"
-      >
-        {year}
-      </Text>
       <HStack
         width="100%"
         justify="center"
