@@ -9,7 +9,7 @@ import {
 } from "@chakra-ui/react";
 import TeamsSection from "./TeamsSection";
 
-const TeamsContent = ({ teamsData }) => (
+const TeamsContent = ({ yearState, teamsData }) => (
   <Box>
     <Tabs defaultIndex={1} isFitted>
       <TabList>
@@ -20,44 +20,48 @@ const TeamsContent = ({ teamsData }) => (
       </TabList>
       <TabPanels>
         <TabPanel>
-          <TeamsSection heading="Faculty" data={teamsData.faculty} />
-          <TeamsSection heading="Advisors" data={teamsData.advisors} />
+          <TeamsSection heading="Faculty" yearState={yearState} data={teamsData.faculty} />
+          <TeamsSection heading="Advisors" yearState={yearState} data={teamsData.advisors} />
         </TabPanel>
         <TabPanel>
           <TeamsSection
             heading="Executive Committee"
             data={teamsData.ecSb}
+            yearState={yearState}
             ec="true"
           />
           <Divider />
-          <TeamsSection heading="Core Committee" data={teamsData.ccSb} />
+          <TeamsSection heading="Core Committee" yearState={yearState} data={teamsData.ccSb} />
           <Divider />
-          <TeamsSection heading="Operating Committee" data={teamsData.ocSb} />
+          <TeamsSection heading="Operating Committee" yearState={yearState} data={teamsData.ocSb} />
         </TabPanel>
         <TabPanel>
           <TeamsSection
             heading="Executive Committee"
+            yearState={yearState}
             data={teamsData.ecCs}
             ec="true"
           />
           <Divider />
           <TeamsSection
             heading="MUJ Central Developers Team"
+            yearState={yearState}
             data={teamsData.ttCS}
           />
           <Divider />
-          <TeamsSection heading="Core Committee" data={teamsData.ccCs} />
+          <TeamsSection heading="Core Committee" yearState={yearState} data={teamsData.ccCs} />
         </TabPanel>
         <TabPanel>
           <TeamsSection
             heading="Executive Committee"
+            yearState={yearState}
             data={teamsData.ecWie}
             ec="true"
           />
           <Divider />
-          <TeamsSection heading="Core Committee" data={teamsData.ccWie} />
+          <TeamsSection heading="Core Committee" data={teamsData.ccWie} yearState={yearState} />
           <Divider />
-          <TeamsSection heading="Operating Committee" data={teamsData.ocWie} />
+          <TeamsSection heading="Operating Committee" data={teamsData.ocWie} yearState={yearState} />
         </TabPanel>
       </TabPanels>
     </Tabs>
