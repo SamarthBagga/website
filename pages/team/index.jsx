@@ -9,11 +9,8 @@ import TitleHeader from '../../components/Layout/TitleHeader';
 import FadeInUp from '../../components/FadeInUp';
 import getTeamsData from '../../cms/queries/teams';
 import NextLink from '../../components/NextLink';
-import FitlerDropdown from '../../components/Events/EventControl/FilterDropdown';
 
 const AboutUs = ({ teamsData }) => {
-  const [yearState, setYearState] = useState('2022');
-
   return (
     <main>
       <NextSeo
@@ -63,12 +60,7 @@ const AboutUs = ({ teamsData }) => {
       </TitleHeader>
       <Section>
         <SectionContent>
-        <FitlerDropdown
-            items={[2022, 2023]}
-            initialValue="2022"
-            onChange={setYearState}
-          />
-          <TeamsContent yearState={yearState} teamsData={teamsData} />
+          <TeamsContent teamsData={teamsData} />
         </SectionContent>
       </Section>
       <FadeInUp>

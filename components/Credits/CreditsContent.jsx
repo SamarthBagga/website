@@ -8,7 +8,7 @@ import {
 import FadeInUp from '../FadeInUp';
 
   const CreditsContent = (props) =>{
-  const {name, image, position, linkedIn, instagram, github, twitter, behance,ec,year} = props;
+  const {name, image, position, linkedIn, instagram, github, twitter, behance,ec} = props;
   var avtrSize="xl";
   if(ec==="true")
   {

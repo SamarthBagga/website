@@ -19,7 +19,7 @@ const FitlerDropdown = ({ items, onChange, initialValue }) => {
     >
       <MenuButton
         as={Button}
-        width="100%"
+        width="30%"
         rightIcon={<BiChevronDown />}
         size="lg"
         backgroundColor="#F8FAFC"

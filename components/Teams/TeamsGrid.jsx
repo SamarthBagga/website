@@ -12,7 +12,7 @@ const TeamsGrid = ({ yearState, members, ec }) => (
     wrap="wrap"
   >
     {members.map((member) => {
-      if (member.year === `${yearState}-06-01`) {
+      if (member.year1 === yearState) {
         return (
           <CreditsContent
             key={member.title}
@@ -25,7 +25,6 @@ const TeamsGrid = ({ yearState, members, ec }) => (
             twitter={member.twitter}
             behance={member.behance}
             ec={ec}
-            year={member.year}
           />
         );
       } else {
