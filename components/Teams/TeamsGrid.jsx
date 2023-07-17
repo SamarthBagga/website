@@ -16,7 +16,7 @@ const TeamsGrid = ({ yearState, members, ec }) => (
         return (
           <CreditsContent
             key={member.title}
-            image={member.image.url}
+            image={member.image?.url} 
             name={member.title}
             position={member.position}
             linkedIn={member.linkedIn}
