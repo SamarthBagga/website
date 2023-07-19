@@ -12,7 +12,7 @@ import TeamsSection from "./TeamsSection";
 import FilterDropdown from "../Events/EventControl/FilterDropdown";
 
 const TeamsContent = ({ teamsData }) => {
-  const [yearState, setYearState] = useState("2022");
+  const [yearState, setYearState] = useState("2023");
 
   return (
     <Box>
@@ -25,7 +25,7 @@ const TeamsContent = ({ teamsData }) => {
         </TabList>
         <FilterDropdown
               items={[2022, 2023]}
-              initialValue="2022"
+              initialValue="2023"
               onChange={setYearState}
             />
         <TabPanels>

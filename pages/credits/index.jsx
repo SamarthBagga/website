@@ -64,7 +64,7 @@ const Credits = ({ creditsData }) => (
             {creditsData.team.map((member) => (
               <CreditsContent
                 key={member.title}
-                image={member.image.url}
+                image={member.image?.url}
                 name={member.title}
                 position={member.dev_position}
                 linkedIn={member.linkedIn}
