@@ -23,11 +23,17 @@ const TeamsContent = ({ teamsData }) => {
           <Tab _focus={{ outline: "none" }}>IEEE CS Society</Tab>
           <Tab _focus={{ outline: "none" }}>IEEE WIE</Tab>
         </TabList>
-        <FilterDropdown
-              items={[2022, 2023]}
-              initialValue="2023"
-              onChange={setYearState}
-            />
+        <Box display="flex" justifyContent="flex-end" width="100%">
+  <Box justifySelf="flex-end" width="35%" alignSelf="flex-end">
+    <FilterDropdown
+      width="100%"
+      items={[2022, 2023]}
+      initialValue="2023"
+      onChange={setYearState}
+    />
+  </Box>
+</Box>
+
         <TabPanels>
           <TabPanel>
             <TeamsSection
